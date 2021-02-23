@@ -192,6 +192,7 @@ public class UserService implements UserDetailsService {
 	 * @param userUpdateRequest the user update request
 	 * @return the optional
 	 */
+	@RolesAllowed({ "ROLE_USER" })
 	public Optional<User> updateUserById(@NonNull Long userId, @NonNull UserUpdateRequest userUpdateRequest) {
 
 		log.debug("updateUserById] - Update User By Id: {} with information: {}", userId, userUpdateRequest);
@@ -323,6 +324,7 @@ public class UserService implements UserDetailsService {
 	 * @param newUser the new user
 	 * @return the optional
 	 */
+	@RolesAllowed({ "ROLE_USER" })
 	public Optional<User> registerNewUser(@NonNull UserCreateRequest newUser) {
 		log.debug("registerNewUser] - Creqte User with information: {}", newUser);
 
