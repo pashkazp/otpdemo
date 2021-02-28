@@ -23,13 +23,13 @@
 
 Для запуску веб додатка розпакуйте архів та перейдіть до КАТАЛОГУ ДОДАТКА.
 Виконайте команду в консолі
-$ cd otpdemo
+>$ cd otpdemo
 
 Виконайте збірку додатку
-$ mvn clean package
+>$ mvn clean package
 
 Для перевірки, що все вдалося запустіть додаток командою в консолі в КАТАЛОЗІ ДОДАТКА
-$ java -jar target/one-time-password.jar
+>$ java -jar target/one-time-password.jar
 
 В браузері перейдіть за адресою 
 http://localhost:8080/
@@ -108,15 +108,15 @@ spring:
 
 Якщо ви зробили якісь зміни у файлі (КАТАЛОГ ДОДАТКА)/src/main/resources/application.yml
 виконайте команду у консолі в КАТАЛОЗІ ДОДАТКА
-$ mvn clean package
+>$ mvn clean package
 
 ## Збірка докер контейнеру та запуск
 
 Після того виконайте збірку Докер контейнера виконавши команду в консолі в КАТАЛОЗІ ДОДАТКА
-$ docker build -t otp-demo:0.0.1 .
+>$ docker build -t otp-demo:0.0.1 .
 
 Після збірки виконайте запуск докер контейнера виконавши команду в консолі
-$ docker run --name otp-demo -d  -p 8080:8080 -t otp-demo:0.0.1
+>$ docker run --name otp-demo -d  -p 8080:8080 -t otp-demo:0.0.1
 
 ## Робота з додатком
 
