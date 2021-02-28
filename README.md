@@ -93,9 +93,13 @@ spring:
 Після зміни цього налаштування ви зможете отримати доступ до консолі за адресою
 http://localhost:8080/h2-console
 
-Вхід за ім'ям та паролем:
-test
-test
+Вхід в консоль за параметрами:
+```
+Driver Class: "org.h2.Driver"
+JDBC URL:     "jdbc:h2:mem:testdb"
+User Name:    "test"
+Password:     "test"
+```
 
 (Ім'я та пароль можна змінити у файлі (КАТАЛОГ ДОДАТКА)/src/main/resources/application.yml у розділі
 ```
